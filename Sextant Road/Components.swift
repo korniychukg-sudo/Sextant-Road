@@ -284,3 +284,61 @@ func formatMinutes(_ minutes: Double) -> String {
 func formatMiles(_ miles: Double) -> String {
     String(format: "%.1f nm", miles)
 }
+
+enum SeaFeel {
+    static func tap() {
+        let gen = UIImpactFeedbackGenerator(style: .light)
+        gen.prepare()
+        gen.impactOccurred(intensity: 0.55)
+    }
+
+    static func mark() {
+        let gen = UIImpactFeedbackGenerator(style: .medium)
+        gen.prepare()
+        gen.impactOccurred()
+    }
+
+    static func land(_ stars: Int) {
+        let gen = UIImpactFeedbackGenerator(style: stars >= 3 ? .heavy : .soft)
+        gen.prepare()
+        gen.impactOccurred(intensity: stars >= 3 ? 1.0 : 0.6)
+    }
+}
+
+struct RisingCard<Content: View>: View {
+    let index: Int
+    @ViewBuilder var content: () -> Content
+    @State private var shown = false
+
+    var body: some View {
+        content()
+            .opacity(shown ? 1 : 0)
+            .offset(y: shown ? 0 : 16)
+            .onAppear {
+                withAnimation(.easeOut(duration: 0.38)
+                    .delay(Double(index) * 0.06)) { shown = true }
+            }
+    }
+}
+
+struct Winding: View {
+    let value: Double
+    var format: (Double) -> String
+    var font: Font
+    var tone: Color
+
+    @State private var shown: Double = 0
+
+    var body: some View {
+        Text(format(shown))
+            .font(font)
+            .foregroundColor(tone)
+            .onAppear {
+                shown = 0
+                withAnimation(.easeOut(duration: 0.75)) { shown = value }
+            }
+            .onChange(of: value) { v in
+                withAnimation(.easeOut(duration: 0.55)) { shown = v }
+            }
+    }
+}

@@ -10,26 +10,30 @@
 		SR0000000000000000003001 /* AlmanacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001001 /* AlmanacView.swift */; };
 		SR0000000000000000003002 /* AwardsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001002 /* AwardsContent.swift */; };
 		SR0000000000000000003003 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001003 /* Components.swift */; };
-		SR0000000000000000003004 /* GlossaryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001004 /* GlossaryContent.swift */; };
-		SR0000000000000000003005 /* InstrumentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001005 /* InstrumentContent.swift */; };
-		SR0000000000000000003006 /* LessonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001006 /* LessonContent.swift */; };
-		SR0000000000000000003007 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001007 /* LogView.swift */; };
-		SR0000000000000000003008 /* PassageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001008 /* PassageView.swift */; };
-		SR0000000000000000003009 /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001009 /* PlotView.swift */; };
-		SR0000000000000000003010 /* QuizContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001010 /* QuizContent.swift */; };
-		SR0000000000000000003011 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001011 /* QuizView.swift */; };
-		SR0000000000000000003012 /* ReduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001012 /* ReduceView.swift */; };
-		SR0000000000000000003013 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001013 /* RootView.swift */; };
-		SR0000000000000000003014 /* SeaIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001014 /* SeaIcons.swift */; };
-		SR0000000000000000003015 /* SeaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001015 /* SeaStore.swift */; };
-		SR0000000000000000003016 /* SeaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001016 /* SeaTheme.swift */; };
-		SR0000000000000000003017 /* SextantField.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001017 /* SextantField.swift */; };
-		SR0000000000000000003018 /* SextantRoadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001018 /* SextantRoadApp.swift */; };
-		SR0000000000000000003019 /* SightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001019 /* SightModel.swift */; };
-		SR0000000000000000003020 /* SightSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001020 /* SightSessionView.swift */; };
-		SR0000000000000000003021 /* SightTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001021 /* SightTabView.swift */; };
-		SR0000000000000000003022 /* StarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001022 /* StarContent.swift */; };
-		SR0000000000000000003023 /* VoyageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001023 /* VoyageContent.swift */; };
+		SR0000000000000000003004 /* FixPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001004 /* FixPlotView.swift */; };
+		SR0000000000000000003005 /* GlossaryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001005 /* GlossaryContent.swift */; };
+		SR0000000000000000003006 /* HorizonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001006 /* HorizonScene.swift */; };
+		SR0000000000000000003007 /* InstrumentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001007 /* InstrumentContent.swift */; };
+		SR0000000000000000003008 /* LessonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001008 /* LessonContent.swift */; };
+		SR0000000000000000003009 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001009 /* LogView.swift */; };
+		SR0000000000000000003010 /* PassageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001010 /* PassageView.swift */; };
+		SR0000000000000000003011 /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001011 /* PlotView.swift */; };
+		SR0000000000000000003012 /* QuizContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001012 /* QuizContent.swift */; };
+		SR0000000000000000003013 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001013 /* QuizView.swift */; };
+		SR0000000000000000003014 /* ReduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001014 /* ReduceView.swift */; };
+		SR0000000000000000003015 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001015 /* RootView.swift */; };
+		SR0000000000000000003016 /* SeaIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001016 /* SeaIcons.swift */; };
+		SR0000000000000000003017 /* SeaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001017 /* SeaStore.swift */; };
+		SR0000000000000000003018 /* SeaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001018 /* SeaTheme.swift */; };
+		SR0000000000000000003019 /* SextantField.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001019 /* SextantField.swift */; };
+		SR0000000000000000003020 /* SextantRoadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001020 /* SextantRoadApp.swift */; };
+		SR0000000000000000003021 /* SightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001021 /* SightModel.swift */; };
+		SR0000000000000000003022 /* SightSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001022 /* SightSessionView.swift */; };
+		SR0000000000000000003023 /* SightTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001023 /* SightTabView.swift */; };
+		SR0000000000000000003024 /* StarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001024 /* StarContent.swift */; };
+		SR0000000000000000003025 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001025 /* TodayView.swift */; };
+		SR0000000000000000003026 /* VoyageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001026 /* VoyageContent.swift */; };
+		SR0000000000000000003027 /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001027 /* WatchModel.swift */; };
 		SR0000000000000000004001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000002001 /* Assets.xcassets */; };
 		SR0000000000000000004002 /* Art in Resources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000002002 /* Art */; };
 /* End PBXBuildFile section */
@@ -38,26 +42,30 @@
 		SR0000000000000000001001 /* AlmanacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmanacView.swift; sourceTree = "<group>"; };
 		SR0000000000000000001002 /* AwardsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsContent.swift; sourceTree = "<group>"; };
 		SR0000000000000000001003 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
-		SR0000000000000000001004 /* GlossaryContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryContent.swift; sourceTree = "<group>"; };
-		SR0000000000000000001005 /* InstrumentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentContent.swift; sourceTree = "<group>"; };
-		SR0000000000000000001006 /* LessonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonContent.swift; sourceTree = "<group>"; };
-		SR0000000000000000001007 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001008 /* PassageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001009 /* PlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001010 /* QuizContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContent.swift; sourceTree = "<group>"; };
-		SR0000000000000000001011 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001012 /* ReduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001013 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001014 /* SeaIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaIcons.swift; sourceTree = "<group>"; };
-		SR0000000000000000001015 /* SeaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaStore.swift; sourceTree = "<group>"; };
-		SR0000000000000000001016 /* SeaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaTheme.swift; sourceTree = "<group>"; };
-		SR0000000000000000001017 /* SextantField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SextantField.swift; sourceTree = "<group>"; };
-		SR0000000000000000001018 /* SextantRoadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SextantRoadApp.swift; sourceTree = "<group>"; };
-		SR0000000000000000001019 /* SightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightModel.swift; sourceTree = "<group>"; };
-		SR0000000000000000001020 /* SightSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSessionView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001021 /* SightTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightTabView.swift; sourceTree = "<group>"; };
-		SR0000000000000000001022 /* StarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarContent.swift; sourceTree = "<group>"; };
-		SR0000000000000000001023 /* VoyageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001004 /* FixPlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixPlotView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001005 /* GlossaryContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001006 /* HorizonScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonScene.swift; sourceTree = "<group>"; };
+		SR0000000000000000001007 /* InstrumentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001008 /* LessonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001009 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001010 /* PassageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001011 /* PlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001012 /* QuizContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001013 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001014 /* ReduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001015 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001016 /* SeaIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaIcons.swift; sourceTree = "<group>"; };
+		SR0000000000000000001017 /* SeaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaStore.swift; sourceTree = "<group>"; };
+		SR0000000000000000001018 /* SeaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaTheme.swift; sourceTree = "<group>"; };
+		SR0000000000000000001019 /* SextantField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SextantField.swift; sourceTree = "<group>"; };
+		SR0000000000000000001020 /* SextantRoadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SextantRoadApp.swift; sourceTree = "<group>"; };
+		SR0000000000000000001021 /* SightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightModel.swift; sourceTree = "<group>"; };
+		SR0000000000000000001022 /* SightSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSessionView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001023 /* SightTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightTabView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001024 /* StarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001025 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		SR0000000000000000001026 /* VoyageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageContent.swift; sourceTree = "<group>"; };
+		SR0000000000000000001027 /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
 		SR0000000000000000002001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		SR0000000000000000002002 /* Art */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Art; sourceTree = "<group>"; };
 		SR0000000000000000002003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,26 +97,30 @@
 				SR0000000000000000001001 /* AlmanacView.swift */,
 				SR0000000000000000001002 /* AwardsContent.swift */,
 				SR0000000000000000001003 /* Components.swift */,
-				SR0000000000000000001004 /* GlossaryContent.swift */,
-				SR0000000000000000001005 /* InstrumentContent.swift */,
-				SR0000000000000000001006 /* LessonContent.swift */,
-				SR0000000000000000001007 /* LogView.swift */,
-				SR0000000000000000001008 /* PassageView.swift */,
-				SR0000000000000000001009 /* PlotView.swift */,
-				SR0000000000000000001010 /* QuizContent.swift */,
-				SR0000000000000000001011 /* QuizView.swift */,
-				SR0000000000000000001012 /* ReduceView.swift */,
-				SR0000000000000000001013 /* RootView.swift */,
-				SR0000000000000000001014 /* SeaIcons.swift */,
-				SR0000000000000000001015 /* SeaStore.swift */,
-				SR0000000000000000001016 /* SeaTheme.swift */,
-				SR0000000000000000001017 /* SextantField.swift */,
-				SR0000000000000000001018 /* SextantRoadApp.swift */,
-				SR0000000000000000001019 /* SightModel.swift */,
-				SR0000000000000000001020 /* SightSessionView.swift */,
-				SR0000000000000000001021 /* SightTabView.swift */,
-				SR0000000000000000001022 /* StarContent.swift */,
-				SR0000000000000000001023 /* VoyageContent.swift */,
+				SR0000000000000000001004 /* FixPlotView.swift */,
+				SR0000000000000000001005 /* GlossaryContent.swift */,
+				SR0000000000000000001006 /* HorizonScene.swift */,
+				SR0000000000000000001007 /* InstrumentContent.swift */,
+				SR0000000000000000001008 /* LessonContent.swift */,
+				SR0000000000000000001009 /* LogView.swift */,
+				SR0000000000000000001010 /* PassageView.swift */,
+				SR0000000000000000001011 /* PlotView.swift */,
+				SR0000000000000000001012 /* QuizContent.swift */,
+				SR0000000000000000001013 /* QuizView.swift */,
+				SR0000000000000000001014 /* ReduceView.swift */,
+				SR0000000000000000001015 /* RootView.swift */,
+				SR0000000000000000001016 /* SeaIcons.swift */,
+				SR0000000000000000001017 /* SeaStore.swift */,
+				SR0000000000000000001018 /* SeaTheme.swift */,
+				SR0000000000000000001019 /* SextantField.swift */,
+				SR0000000000000000001020 /* SextantRoadApp.swift */,
+				SR0000000000000000001021 /* SightModel.swift */,
+				SR0000000000000000001022 /* SightSessionView.swift */,
+				SR0000000000000000001023 /* SightTabView.swift */,
+				SR0000000000000000001024 /* StarContent.swift */,
+				SR0000000000000000001025 /* TodayView.swift */,
+				SR0000000000000000001026 /* VoyageContent.swift */,
+				SR0000000000000000001027 /* WatchModel.swift */,
 				SR0000000000000000002001 /* Assets.xcassets */,
 				SR0000000000000000002002 /* Art */,
 				SR0000000000000000002003 /* Info.plist */,
@@ -197,26 +209,30 @@
 				SR0000000000000000003001 /* AlmanacView.swift in Sources */,
 				SR0000000000000000003002 /* AwardsContent.swift in Sources */,
 				SR0000000000000000003003 /* Components.swift in Sources */,
-				SR0000000000000000003004 /* GlossaryContent.swift in Sources */,
-				SR0000000000000000003005 /* InstrumentContent.swift in Sources */,
-				SR0000000000000000003006 /* LessonContent.swift in Sources */,
-				SR0000000000000000003007 /* LogView.swift in Sources */,
-				SR0000000000000000003008 /* PassageView.swift in Sources */,
-				SR0000000000000000003009 /* PlotView.swift in Sources */,
-				SR0000000000000000003010 /* QuizContent.swift in Sources */,
-				SR0000000000000000003011 /* QuizView.swift in Sources */,
-				SR0000000000000000003012 /* ReduceView.swift in Sources */,
-				SR0000000000000000003013 /* RootView.swift in Sources */,
-				SR0000000000000000003014 /* SeaIcons.swift in Sources */,
-				SR0000000000000000003015 /* SeaStore.swift in Sources */,
-				SR0000000000000000003016 /* SeaTheme.swift in Sources */,
-				SR0000000000000000003017 /* SextantField.swift in Sources */,
-				SR0000000000000000003018 /* SextantRoadApp.swift in Sources */,
-				SR0000000000000000003019 /* SightModel.swift in Sources */,
-				SR0000000000000000003020 /* SightSessionView.swift in Sources */,
-				SR0000000000000000003021 /* SightTabView.swift in Sources */,
-				SR0000000000000000003022 /* StarContent.swift in Sources */,
-				SR0000000000000000003023 /* VoyageContent.swift in Sources */,
+				SR0000000000000000003004 /* FixPlotView.swift in Sources */,
+				SR0000000000000000003005 /* GlossaryContent.swift in Sources */,
+				SR0000000000000000003006 /* HorizonScene.swift in Sources */,
+				SR0000000000000000003007 /* InstrumentContent.swift in Sources */,
+				SR0000000000000000003008 /* LessonContent.swift in Sources */,
+				SR0000000000000000003009 /* LogView.swift in Sources */,
+				SR0000000000000000003010 /* PassageView.swift in Sources */,
+				SR0000000000000000003011 /* PlotView.swift in Sources */,
+				SR0000000000000000003012 /* QuizContent.swift in Sources */,
+				SR0000000000000000003013 /* QuizView.swift in Sources */,
+				SR0000000000000000003014 /* ReduceView.swift in Sources */,
+				SR0000000000000000003015 /* RootView.swift in Sources */,
+				SR0000000000000000003016 /* SeaIcons.swift in Sources */,
+				SR0000000000000000003017 /* SeaStore.swift in Sources */,
+				SR0000000000000000003018 /* SeaTheme.swift in Sources */,
+				SR0000000000000000003019 /* SextantField.swift in Sources */,
+				SR0000000000000000003020 /* SextantRoadApp.swift in Sources */,
+				SR0000000000000000003021 /* SightModel.swift in Sources */,
+				SR0000000000000000003022 /* SightSessionView.swift in Sources */,
+				SR0000000000000000003023 /* SightTabView.swift in Sources */,
+				SR0000000000000000003024 /* StarContent.swift in Sources */,
+				SR0000000000000000003025 /* TodayView.swift in Sources */,
+				SR0000000000000000003026 /* VoyageContent.swift in Sources */,
+				SR0000000000000000003027 /* WatchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

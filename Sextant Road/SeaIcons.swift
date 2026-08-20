@@ -270,3 +270,53 @@ struct AnchorGlyph: View {
         .frame(width: size, height: size)
     }
 }
+
+struct WatchGlyph: View {
+    var size: CGFloat = 24
+    var colour: Color = Sea.ink
+
+    var body: some View {
+        Canvas { ctx, rect in
+            let w = rect.width, h = rect.height
+            let horizon = h * 0.66
+            var sea = Path()
+            sea.move(to: CGPoint(x: w * 0.06, y: horizon))
+            sea.addLine(to: CGPoint(x: w * 0.94, y: horizon))
+            ctx.stroke(sea, with: .color(colour),
+                       style: StrokeStyle(lineWidth: w * 0.085, lineCap: .round))
+
+            var swell = Path()
+            swell.move(to: CGPoint(x: w * 0.14, y: horizon + h * 0.17))
+            swell.addQuadCurve(to: CGPoint(x: w * 0.44, y: horizon + h * 0.17),
+                               control: CGPoint(x: w * 0.29, y: horizon + h * 0.06))
+            swell.move(to: CGPoint(x: w * 0.52, y: horizon + h * 0.25))
+            swell.addQuadCurve(to: CGPoint(x: w * 0.86, y: horizon + h * 0.25),
+                               control: CGPoint(x: w * 0.69, y: horizon + h * 0.13))
+            ctx.stroke(swell, with: .color(colour.opacity(0.55)),
+                       style: StrokeStyle(lineWidth: w * 0.065, lineCap: .round))
+
+            let bx = w * 0.68, by = h * 0.30, br = w * 0.115
+            ctx.fill(Path(ellipseIn: CGRect(x: bx - br, y: by - br,
+                                            width: br * 2, height: br * 2)),
+                     with: .color(colour))
+            var rays = Path()
+            for k in 0..<4 {
+                let a = Double(k) * .pi / 2 + 0.4
+                rays.move(to: CGPoint(x: bx + CGFloat(cos(a)) * br * 1.7,
+                                      y: by + CGFloat(sin(a)) * br * 1.7))
+                rays.addLine(to: CGPoint(x: bx + CGFloat(cos(a)) * br * 2.7,
+                                         y: by + CGFloat(sin(a)) * br * 2.7))
+            }
+            ctx.stroke(rays, with: .color(colour.opacity(0.7)),
+                       style: StrokeStyle(lineWidth: w * 0.055, lineCap: .round))
+
+            var arc = Path()
+            arc.addArc(center: CGPoint(x: w * 0.26, y: horizon),
+                       radius: w * 0.20, startAngle: .radians(.pi),
+                       endAngle: .radians(.pi * 1.62), clockwise: false)
+            ctx.stroke(arc, with: .color(colour.opacity(0.85)),
+                       style: StrokeStyle(lineWidth: w * 0.07, lineCap: .round))
+        }
+        .frame(width: size, height: size)
+    }
+}

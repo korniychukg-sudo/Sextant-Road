@@ -11,6 +11,15 @@ struct SightRecord: Codable, Identifiable {
     var workedClean: Bool
 }
 
+struct RoundRecord: Codable, Identifiable {
+    var id: String
+    var dayIndex: Int
+    var errorMiles: Double
+    var hatMiles: Double
+    var stars: Int
+    var bodies: [String]
+}
+
 struct VoyageState: Codable {
     var day: Int
     var finished: Bool
@@ -29,6 +38,10 @@ final class SeaStore: ObservableObject {
     @Published var quizTaken: Int = 0
     @Published var onboarded: Bool = false
     @Published var lastAward: String? = nil
+    @Published var rounds: [RoundRecord] = []
+    @Published var streak: Int = 0
+    @Published var bestStreak: Int = 0
+    @Published var lastRoundDay: Int = -9999
 
     private let key = "sextant.road.state.v1"
     private var loaded = false
@@ -45,6 +58,10 @@ final class SeaStore: ObservableObject {
         var quizBest: Int
         var quizTaken: Int
         var onboarded: Bool
+        var rounds: [RoundRecord]?
+        var streak: Int?
+        var bestStreak: Int?
+        var lastRoundDay: Int?
     }
 
     func load() {
@@ -62,6 +79,10 @@ final class SeaStore: ObservableObject {
         quizBest = snap.quizBest
         quizTaken = snap.quizTaken
         onboarded = snap.onboarded
+        rounds = snap.rounds ?? []
+        streak = snap.streak ?? 0
+        bestStreak = snap.bestStreak ?? 0
+        lastRoundDay = snap.lastRoundDay ?? -9999
         loaded = true
     }
 
@@ -73,7 +94,8 @@ final class SeaStore: ObservableObject {
                             metInstruments: Array(metInstruments),
                             awards: Array(awards),
                             quizBest: quizBest, quizTaken: quizTaken,
-                            onboarded: onboarded)
+                            onboarded: onboarded, rounds: rounds, streak: streak,
+                            bestStreak: bestStreak, lastRoundDay: lastRoundDay)
         if let data = try? JSONEncoder().encode(snap) {
             UserDefaults.standard.set(data, forKey: key)
         }
@@ -146,6 +168,50 @@ final class SeaStore: ObservableObject {
         saveNow()
     }
 
+    var roundsMade: Int { rounds.count }
+
+    var bestFixMiles: Double? { rounds.map { $0.errorMiles }.min() }
+
+    var cleanRounds: Int { rounds.filter { $0.stars >= 3 }.count }
+
+    func round(for day: Int) -> RoundRecord? {
+        rounds.first { $0.dayIndex == day }
+    }
+
+    var seaPoints: Int {
+        sights.count * 2
+            + perfectSights * 6
+            + readLessons.count * 3
+            + metStars.count * 2
+            + metInstruments.count * 2
+            + voyagesFinished * 25
+            + rounds.count * 9
+            + cleanRounds * 12
+            + bestStreak * 5
+            + quizBest * 2
+    }
+
+    var liveStreak: Int {
+        let today = SeaDay.index()
+        if lastRoundDay == today || lastRoundDay == today - 1 { return streak }
+        return 0
+    }
+
+    func recordRound(_ rec: RoundRecord) {
+        guard round(for: rec.dayIndex) == nil else { return }
+        rounds.append(rec)
+        if rounds.count > 400 { rounds.removeFirst(rounds.count - 400) }
+        if rec.dayIndex == lastRoundDay + 1 {
+            streak += 1
+        } else if rec.dayIndex != lastRoundDay {
+            streak = 1
+        }
+        lastRoundDay = max(lastRoundDay, rec.dayIndex)
+        if streak > bestStreak { bestStreak = streak }
+        refreshAwards()
+        saveNow()
+    }
+
     func finishOnboarding() {
         onboarded = true
         saveNow()
@@ -160,6 +226,10 @@ final class SeaStore: ObservableObject {
         awards = []
         quizBest = 0
         quizTaken = 0
+        rounds = []
+        streak = 0
+        bestStreak = 0
+        lastRoundDay = -9999
         saveNow()
     }
 
