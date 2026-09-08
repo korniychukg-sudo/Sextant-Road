@@ -143,6 +143,8 @@ struct Chip: View {
         Text(text.uppercased())
             .font(SeaFont.title(11))
             .tracking(1.6)
+            .lineLimit(1)
+            .minimumScaleFactor(0.62)
             .foregroundColor(solid ? Sea.card : tone)
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
