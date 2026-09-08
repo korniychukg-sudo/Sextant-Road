@@ -36,6 +36,8 @@
 		SR0000000000000000003027 /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000001027 /* WatchModel.swift */; };
 		SR0000000000000000004001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000002001 /* Assets.xcassets */; };
 		SR0000000000000000004002 /* Art in Resources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000002002 /* Art */; };
+		SR0000000000000000009602 /* SeaWebPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000009601 /* SeaWebPanel.swift */; };
+		SR0000000000000000009605 /* SeaLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = SR0000000000000000009604 /* SeaLoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		SR0000000000000000002002 /* Art */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Art; sourceTree = "<group>"; };
 		SR0000000000000000002003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		SR0000000000000000002004 /* Sextant Road.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sextant Road.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		SR0000000000000000009601 /* SeaWebPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaWebPanel.swift; sourceTree = "<group>"; };
+		SR0000000000000000009604 /* SeaLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLoadingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				SR0000000000000000001013 /* QuizView.swift */,
 				SR0000000000000000001014 /* ReduceView.swift */,
 				SR0000000000000000001015 /* RootView.swift */,
+				SR0000000000000000009604 /* SeaLoadingScreen.swift */,
+				SR0000000000000000009601 /* SeaWebPanel.swift */,
 				SR0000000000000000001016 /* SeaIcons.swift */,
 				SR0000000000000000001017 /* SeaStore.swift */,
 				SR0000000000000000001018 /* SeaTheme.swift */,
@@ -221,6 +227,8 @@
 				SR0000000000000000003013 /* QuizView.swift in Sources */,
 				SR0000000000000000003014 /* ReduceView.swift in Sources */,
 				SR0000000000000000003015 /* RootView.swift in Sources */,
+				SR0000000000000000009605 /* SeaLoadingScreen.swift in Sources */,
+				SR0000000000000000009602 /* SeaWebPanel.swift in Sources */,
 				SR0000000000000000003016 /* SeaIcons.swift in Sources */,
 				SR0000000000000000003017 /* SeaStore.swift in Sources */,
 				SR0000000000000000003018 /* SeaTheme.swift in Sources */,
