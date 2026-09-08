@@ -264,7 +264,7 @@ struct AboutView: View {
                     .foregroundColor(Sea.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
 
-                Text("The app keeps no account, asks for no permissions and sends nothing anywhere. Your log lives on this device only.")
+                Text("The app keeps no account, asks for no permissions and collects nothing about you. Your log lives on this device only.")
                     .font(SeaFont.body(16))
                     .foregroundColor(Sea.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
